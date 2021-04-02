@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+padding: 0;
+margin: 0;
+
+}
+
+.container-carousel{
+  max-width: 90%;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+
+
+.carousel__contenedor{
+  position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  top: calc(50% - 35px);
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+  background: none;
+  color:black;
+  /* opacity: 20%; */
+}
+
+
+.carousel__anterior{ 
+  left: -30px;
+} 
+
+ .carousel__siguiente{ 
+  right: -30px;
+} 
+
+.carousel__lista{
+  overflow: hidden;
+}
+
+.carousel__elemento{
+  text-align: center;
+  margin: auto;
+}
+
+
+.carousel__anterior,
+.carousel__siguiente:hover{
+  opacity: 100%;
+}
+
+.carousel__indicadores .glider-dot{
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: black;
+  opacity: .2;
+  border-radius: 0;
+}
+.carousel__indicadores .glider-dot:hover{
+  opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active{
+  opacity: 1;
+}
+
+
+.carousel img{ 
+  width: 250px;
+  height: 200px; 
+  object-fit: cover; 
+  margin: auto;
+  border-radius: 5px;
+  box-shadow:5px 5px 5px #ccc;
+  
+ } 
